@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GeoAR.js demo</title>
-    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-    <!-- <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script> -->
+    <!-- <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script> -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
 
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <!-- <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script> -->
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script>
       THREEx.ArToolkitContext.baseURL =
@@ -20,13 +20,13 @@
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
-      arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 500; displayHeight: 350; debugUIEnabled: false;"
+      arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
     >
       <a-camera gps-camera rotation-reader></a-camera>
       <a-entity
         gltf-model="./scene.gltf"
-        rotation="0 180 0"
-        scale="0.15 0.15 0.15"
+        rotation="90 180 0"
+        scale="0.1 0.1 0.1"
         gps-entity-place="longitude: 14.568149; latitude:50.404595;"
         animation-mixer
       />
